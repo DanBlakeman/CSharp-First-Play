@@ -6,13 +6,16 @@ namespace FirstConsoleProject
 	{
 		public static void Main (string[] args)
 		{
-			Start:
-			Console.WriteLine ("Welcome to Divisor.io\nEnter a number to be divided:");
-			double firstInput = Convert.ToDouble ( Console.ReadLine () );
-			Console.WriteLine ("and the number to divide it by:");
-			double secondInput = Convert.ToDouble ( Console.ReadLine () );
-			Console.WriteLine (firstInput + " divided by " + secondInput + " equals "  + firstInput / secondInput + "!");
-			goto Start;
+			int firstNum = 7;
+			int secondNum = 8;
+
+			Console.WriteLine ("What is " + firstNum + " * " + secondNum + "?" );
+			int userResponse = Convert.ToInt32 (Console.ReadLine ());
+			if (userResponse == 56) {
+				Console.WriteLine ("Wahey, you win!");
+			} else {
+				Console.WriteLine ("Sorry, you lose.");
+			}
 		}
 	}
 }
